@@ -38,6 +38,11 @@ describe("测试描述", function() {
     expect(expect_string).to.equal(result);
   });
 
+  it("digit_23", function() {
+    var result = main(base_digit,23);
+    var expect_string = '1\n2\nFizz\n4\nBuzz\nFizz\nWhizz\n8\nFizz\nBuzz\n11\nFizz\nFizz\nWhizz\nFizzBuzz\n16\n17\nFizz\n19\nBuzz\nFizzWhizz\n22\nFizz\n';
+    expect(expect_string).to.equal(result);
+  });
 
 
 
