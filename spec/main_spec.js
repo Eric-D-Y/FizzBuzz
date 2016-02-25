@@ -9,9 +9,16 @@ chai.use(sinonChai);
 var main = require("../lib/main.js");
 
 var base_digit=[3,5,7];
+var base_digit_wrong=[3,5,3];
 
 describe("测试描述", function() {
   sinon.spy(console, 'log');
+
+  it("wrong_base_digits", function() {
+    var result = main(base_digit_wrong,3);
+    var expect_string = 'wrong base digits';
+    expect(expect_string).to.equal(result);
+  });
 
   it("digit_3", function() {
     var result = main(base_digit,3);
