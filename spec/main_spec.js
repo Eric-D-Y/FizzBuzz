@@ -31,6 +31,23 @@ describe("测试描述", function() {
     expect(expect_string).to.equal(result);
   });
 
+  it("digit_15", function() {
+    var result = main(base_digit,15);
+    var expect_string = 'FizzBuzz';
+    expect(expect_string).to.equal(result);
+  });
+
+  it("digit_21", function() {
+    var result = main(base_digit,21);
+    var expect_string = 'FizzWhizz';
+    expect(expect_string).to.equal(result);
+  });
+
+  it("digit_105", function() {
+    var result = main(base_digit,105);
+    var expect_string = 'FizzBuzzWhizz';
+    expect(expect_string).to.equal(result);
+  });
 
 
 
