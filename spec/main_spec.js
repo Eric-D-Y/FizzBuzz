@@ -14,10 +14,20 @@ describe("测试描述", function() {
   sinon.spy(console, 'log');
 
   it("digit_3", function() {
-
     var result = main(base_digit,3);
-    var expect_string = '11';
+    var expect_string = 'Fizz';
+    expect(expect_string).to.equal(result);
+  });
 
+  it("digit_5", function() {
+    var result = main(base_digit,5);
+    var expect_string = 'Buzz';
+    expect(expect_string).to.equal(result);
+  });
+
+  it("digit_7", function() {
+    var result = main(base_digit,7);
+    var expect_string = 'Whizz';
     expect(expect_string).to.equal(result);
   });
 
