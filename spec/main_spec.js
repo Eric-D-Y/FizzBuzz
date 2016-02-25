@@ -15,39 +15,30 @@ describe("测试描述", function() {
 
   it("digit_3", function() {
     var result = main(base_digit,3);
-    var expect_string = 'Fizz';
+    var expect_string = '1\n2\nFizz\n';
     expect(expect_string).to.equal(result);
   });
 
-  it("digit_5", function() {
-    var result = main(base_digit,5);
-    var expect_string = 'Buzz';
+  it("digit_6", function() {
+    var result = main(base_digit,6);
+    var expect_string = '1\n2\nFizz\n4\nBuzz\nFizz\n';
     expect(expect_string).to.equal(result);
   });
 
-  it("digit_7", function() {
-    var result = main(base_digit,7);
-    var expect_string = 'Whizz';
+  it("digit_8", function() {
+    var result = main(base_digit,8);
+    var expect_string = '1\n2\nFizz\n4\nBuzz\nFizz\nWhizz\n8\n';
     expect(expect_string).to.equal(result);
   });
 
-  it("digit_15", function() {
-    var result = main(base_digit,15);
-    var expect_string = 'FizzBuzz';
+
+  it("digit_13", function() {
+    var result = main(base_digit,13);
+    var expect_string = '1\n2\nFizz\n4\nBuzz\nFizz\nWhizz\n8\nFizz\nBuzz\n11\nFizz\nFizz\n';
     expect(expect_string).to.equal(result);
   });
 
-  it("digit_21", function() {
-    var result = main(base_digit,21);
-    var expect_string = 'FizzWhizz';
-    expect(expect_string).to.equal(result);
-  });
 
-  it("digit_105", function() {
-    var result = main(base_digit,105);
-    var expect_string = 'FizzBuzzWhizz';
-    expect(expect_string).to.equal(result);
-  });
 
 
 
